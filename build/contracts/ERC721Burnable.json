@@ -1,0 +1,610 @@
+{
+  "contractName": "ERC721Burnable",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_interfaceID",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "total",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOf",
+      "outputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "owner_Of",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "approved",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// OpenZeppellin Source code\r\n// Copied from: https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/token/ERC721/ERC721Burnable.sol\r\n\r\npragma solidity ^0.4.25;\r\n\r\nimport \"./ERC721.sol\";\r\n\r\n/**\r\n * @title ERC721 Burnable Token\r\n * @dev ERC721 Token that can be irreversibly burned (destroyed).\r\n */\r\ncontract ERC721Burnable is ERC721 {\r\n    /**\r\n     * @dev Burns a specific ERC721 token.\r\n     * @param tokenId uint256 id of the ERC721 token to be burned.\r\n     */\r\n    function burn(uint256 tokenId) public {\r\n        _burn(tokenId);\r\n    }\r\n}",
+  "sourcePath": "C:\\Users\\CTrov\\OneDrive\\Documents\\ESILV\\BLOCKCHAIN PROGRAMMING\\Blockchain_Programming_TD6\\contracts\\ERC721Burnable.sol",
+  "ast": {
+    "absolutePath": "/C/Users/CTrov/OneDrive/Documents/ESILV/BLOCKCHAIN PROGRAMMING/Blockchain_Programming_TD6/contracts/ERC721Burnable.sol",
+    "exportedSymbols": {
+      "ERC721Burnable": [
+        2361
+      ]
+    },
+    "id": 2362,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2347,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "157:24:7"
+      },
+      {
+        "absolutePath": "/C/Users/CTrov/OneDrive/Documents/ESILV/BLOCKCHAIN PROGRAMMING/Blockchain_Programming_TD6/contracts/ERC721.sol",
+        "file": "./ERC721.sol",
+        "id": 2348,
+        "nodeType": "ImportDirective",
+        "scope": 2362,
+        "sourceUnit": 2346,
+        "src": "185:22:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2349,
+              "name": "ERC721",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2345,
+              "src": "348:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721_$2345",
+                "typeString": "contract ERC721"
+              }
+            },
+            "id": 2350,
+            "nodeType": "InheritanceSpecifier",
+            "src": "348:6:7"
+          }
+        ],
+        "contractDependencies": [
+          2345
+        ],
+        "contractKind": "contract",
+        "documentation": "@title ERC721 Burnable Token\r\n@dev ERC721 Token that can be irreversibly burned (destroyed).\r",
+        "fullyImplemented": false,
+        "id": 2361,
+        "linearizedBaseContracts": [
+          2361,
+          2345
+        ],
+        "name": "ERC721Burnable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 2359,
+              "nodeType": "Block",
+              "src": "530:33:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2356,
+                        "name": "tokenId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2352,
+                        "src": "547:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 2355,
+                      "name": "_burn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2331,
+                        2344
+                      ],
+                      "referencedDeclaration": 2344,
+                      "src": "541:5:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 2357,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "541:14:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2358,
+                  "nodeType": "ExpressionStatement",
+                  "src": "541:14:7"
+                }
+              ]
+            },
+            "documentation": "@dev Burns a specific ERC721 token.\r\n@param tokenId uint256 id of the ERC721 token to be burned.\r",
+            "id": 2360,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2353,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2352,
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2360,
+                  "src": "506:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2351,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "506:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "505:17:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 2354,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "530:0:7"
+            },
+            "scope": 2361,
+            "src": "492:71:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 2362,
+        "src": "321:245:7"
+      }
+    ],
+    "src": "157:409:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/CTrov/OneDrive/Documents/ESILV/BLOCKCHAIN PROGRAMMING/Blockchain_Programming_TD6/contracts/ERC721Burnable.sol",
+    "exportedSymbols": {
+      "ERC721Burnable": [
+        2361
+      ]
+    },
+    "id": 2362,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2347,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "157:24:7"
+      },
+      {
+        "absolutePath": "/C/Users/CTrov/OneDrive/Documents/ESILV/BLOCKCHAIN PROGRAMMING/Blockchain_Programming_TD6/contracts/ERC721.sol",
+        "file": "./ERC721.sol",
+        "id": 2348,
+        "nodeType": "ImportDirective",
+        "scope": 2362,
+        "sourceUnit": 2346,
+        "src": "185:22:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2349,
+              "name": "ERC721",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2345,
+              "src": "348:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721_$2345",
+                "typeString": "contract ERC721"
+              }
+            },
+            "id": 2350,
+            "nodeType": "InheritanceSpecifier",
+            "src": "348:6:7"
+          }
+        ],
+        "contractDependencies": [
+          2345
+        ],
+        "contractKind": "contract",
+        "documentation": "@title ERC721 Burnable Token\r\n@dev ERC721 Token that can be irreversibly burned (destroyed).\r",
+        "fullyImplemented": false,
+        "id": 2361,
+        "linearizedBaseContracts": [
+          2361,
+          2345
+        ],
+        "name": "ERC721Burnable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 2359,
+              "nodeType": "Block",
+              "src": "530:33:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2356,
+                        "name": "tokenId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2352,
+                        "src": "547:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 2355,
+                      "name": "_burn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2331,
+                        2344
+                      ],
+                      "referencedDeclaration": 2344,
+                      "src": "541:5:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 2357,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "541:14:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2358,
+                  "nodeType": "ExpressionStatement",
+                  "src": "541:14:7"
+                }
+              ]
+            },
+            "documentation": "@dev Burns a specific ERC721 token.\r\n@param tokenId uint256 id of the ERC721 token to be burned.\r",
+            "id": 2360,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2353,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2352,
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2360,
+                  "src": "506:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2351,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "506:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "505:17:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 2354,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "530:0:7"
+            },
+            "scope": 2361,
+            "src": "492:71:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 2362,
+        "src": "321:245:7"
+      }
+    ],
+    "src": "157:409:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-03-17T20:04:31.825Z"
+}

@@ -1,0 +1,523 @@
+{
+  "contractName": "GeneScienceInterface",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isGeneScience",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "genes1",
+          "type": "uint256"
+        },
+        {
+          "name": "genes2",
+          "type": "uint256"
+        },
+        {
+          "name": "targetBlock",
+          "type": "uint256"
+        }
+      ],
+      "name": "mixGenes",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// CryptoKitties Source code\r\n// Copied from: https://etherscan.io/address/0x06012c8cf97bead5deae237070f9587f8e7a266d#code\r\n\r\npragma solidity ^0.4.25;\r\n\r\n\r\n/// @title SEKRETOOOO\r\ncontract GeneScienceInterface {\r\n    /// @dev simply a boolean to indicate this is the contract we expect to be\r\n    function isGeneScience() public pure returns (bool);\r\n\r\n    /// @dev given genes of kitten 1 & 2, return a genetic combination - may have a random factor\r\n    /// @param genes1 genes of mom\r\n    /// @param genes2 genes of sire\r\n    /// @return the genes that are supposed to be passed down the child\r\n    function mixGenes(uint256 genes1, uint256 genes2, uint256 targetBlock) public returns (uint256);\r\n}",
+  "sourcePath": "C:\\Users\\CTrov\\OneDrive\\Documents\\ESILV\\BLOCKCHAIN PROGRAMMING\\Blockchain_Programming_TD6\\contracts\\GeneScienceInterface.sol",
+  "ast": {
+    "absolutePath": "/C/Users/CTrov/OneDrive/Documents/ESILV/BLOCKCHAIN PROGRAMMING/Blockchain_Programming_TD6/contracts/GeneScienceInterface.sol",
+    "exportedSymbols": {
+      "GeneScienceInterface": [
+        3241
+      ]
+    },
+    "id": 3242,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3224,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "126:24:12"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title SEKRETOOOO",
+        "fullyImplemented": false,
+        "id": 3241,
+        "linearizedBaseContracts": [
+          3241
+        ],
+        "name": "GeneScienceInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev simply a boolean to indicate this is the contract we expect to be",
+            "id": 3229,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isGeneScience",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3225,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "318:2:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3228,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3227,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3229,
+                  "src": "342:4:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3226,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "342:4:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "341:6:12"
+            },
+            "scope": 3241,
+            "src": "296:52:12",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@return the genes that are supposed to be passed down the child",
+            "id": 3240,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mixGenes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3236,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3231,
+                  "name": "genes1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3240,
+                  "src": "619:14:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3230,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "619:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3233,
+                  "name": "genes2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3240,
+                  "src": "635:14:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3232,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "635:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3235,
+                  "name": "targetBlock",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3240,
+                  "src": "651:19:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3234,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "651:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "618:53:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3239,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3238,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3240,
+                  "src": "688:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3237,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "688:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "687:9:12"
+            },
+            "scope": 3241,
+            "src": "601:96:12",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3242,
+        "src": "179:521:12"
+      }
+    ],
+    "src": "126:574:12"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/CTrov/OneDrive/Documents/ESILV/BLOCKCHAIN PROGRAMMING/Blockchain_Programming_TD6/contracts/GeneScienceInterface.sol",
+    "exportedSymbols": {
+      "GeneScienceInterface": [
+        3241
+      ]
+    },
+    "id": 3242,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3224,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "126:24:12"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title SEKRETOOOO",
+        "fullyImplemented": false,
+        "id": 3241,
+        "linearizedBaseContracts": [
+          3241
+        ],
+        "name": "GeneScienceInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev simply a boolean to indicate this is the contract we expect to be",
+            "id": 3229,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isGeneScience",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3225,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "318:2:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3228,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3227,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3229,
+                  "src": "342:4:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3226,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "342:4:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "341:6:12"
+            },
+            "scope": 3241,
+            "src": "296:52:12",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@return the genes that are supposed to be passed down the child",
+            "id": 3240,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mixGenes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3236,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3231,
+                  "name": "genes1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3240,
+                  "src": "619:14:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3230,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "619:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3233,
+                  "name": "genes2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3240,
+                  "src": "635:14:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3232,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "635:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3235,
+                  "name": "targetBlock",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3240,
+                  "src": "651:19:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3234,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "651:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "618:53:12"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3239,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3238,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3240,
+                  "src": "688:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3237,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "688:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "687:9:12"
+            },
+            "scope": 3241,
+            "src": "601:96:12",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3242,
+        "src": "179:521:12"
+      }
+    ],
+    "src": "126:574:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-03-17T15:05:22.020Z"
+}
